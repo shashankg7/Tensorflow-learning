@@ -1,0 +1,127 @@
+[32m[I 14:48:38.798 NotebookApp][m Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[32m[I 14:48:39.336 NotebookApp][m Serving notebooks from local directory: /home/shashank/Programming/tensorflow-101/GAN-tf
+[32m[I 14:48:39.336 NotebookApp][m 0 active kernels 
+[32m[I 14:48:39.336 NotebookApp][m The Jupyter Notebook is running at: http://localhost:8888/?token=630973c6b41139dbc0cb9770b31227af141817039701b41c
+[32m[I 14:48:39.336 NotebookApp][m Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 14:48:39.336 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=630973c6b41139dbc0cb9770b31227af141817039701b41c
+[32m[I 14:48:49.825 NotebookApp][m 302 GET /?token=630973c6b41139dbc0cb9770b31227af141817039701b41c (127.0.0.1) 1.42ms
+[32m[I 14:48:54.524 NotebookApp][m Creating new notebook in 
+[33m[W 14:48:56.149 NotebookApp][m 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170531144838 (127.0.0.1) 16.44ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python2
+[32m[I 14:48:56.268 NotebookApp][m Kernel started: b2ea501f-00fb-423c-bf4e-164d60ef79ff
+[32m[I 14:49:22.274 NotebookApp][m Saving file at /Untitled.ipynb
+[32m[I 14:55:30.706 NotebookApp][m 302 GET /?token=630973c6b41139dbc0cb9770b31227af141817039701b41c (127.0.0.1) 0.33ms
+[33m[W 14:55:33.728 NotebookApp][m 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170531144838 (127.0.0.1) 1.65ms referer=http://localhost:8888/notebooks/Untitled.ipynb
+[32m[I 14:57:33.931 NotebookApp][m Saving file at /Untitled.ipynb
+f ^C[32m[I 14:58:22.632 NotebookApp][m interrupted
+Serving notebooks from local directory: /home/shashank/Programming/tensorflow-101/GAN-tf
+1 active kernels 
+The Jupyter Notebook is running at: http://localhost:8888/?token=630973c6b41139dbc0cb9770b31227af141817039701b41c
+Shutdown this notebook server (y/[n])? y
+[C 14:58:23.861 NotebookApp] Shutdown confirmed
+[32m[I 14:58:23.861 NotebookApp][m Shutting down kernels
+[32m[I 14:58:24.363 NotebookApp][m Kernel shutdown: b2ea501f-00fb-423c-bf4e-164d60ef79ff
+
+
+
+
+
+^CThe Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--no-browser
+    Don't open the notebook in a browser after startup.
+-y
+    Answer yes to any questions instead of prompting.
+--script
+    DEPRECATED, IGNORED
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--no-script
+    DEPRECATED, IGNORED
+--generate-config
+    generate default config file
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not
+    available.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+
+[C 14:58:56.686 NotebookApp] Bad config encountered during initialization:
+[C 14:58:56.686 NotebookApp] Unrecognized flag: '--defaultkernel'
